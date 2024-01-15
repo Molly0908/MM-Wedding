@@ -290,6 +290,19 @@ img {
     height: auto; /* Ensure the image fills the container */
 }
 
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .parking-image-container {
+        width: 100%; /* Set width to 100% for smaller screens */
+        height: auto; /* Allow height to adjust based on the image aspect ratio */
+        max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+    }
+
+    .parking-image-container img {
+        width: 100%; /* Ensure the image fills the container */
+        height: auto; /* Allow height to adjust based on the image aspect ratio */
+    }
+}
 
 /* Style the countdown timer */
 .countdown-timer ul {
