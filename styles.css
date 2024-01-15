@@ -116,12 +116,49 @@ header {
     display: none;
 }
 
+/* Mobile Menu Container (Hidden by Default) */
+.mobile-menu-container {
+    display: none;
+    background-color: #FFF;
+    position: absolute;
+    top: 60px; /* Adjust this value to position the dropdown menu below the header */
+    right: 20px;
+    z-index: 101; /* Ensure it's above other content */
+    border: 1px solid #154360;
+}
+
+/* Style for the dropdown mobile menu */
+.mobile-menu-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-container li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mobile-menu-container a {
+    display: block;
+    color: #154360;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+/* Style for the dropdown mobile menu when expanded */
+.mobile-menu-container.show-mobile-menu {
+    display: block;
+}
+
+
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     .header-menu-right.mobile-menu {
-        display: block; /* Display mobile menu on smaller screens */
-        text-align: left; /* Adjust text alignment for mobile menu */
-        position: relative; /* Reset position for mobile menu */
+        display: none; /* Hide the desktop menu */
     }
 
     .header-menu-right.mobile-menu li {
