@@ -7,23 +7,23 @@ h1, ul, li {
 
 
 body {
-    background-color: #FDF2E9;2 /* Replace "your-color" with the desired background color */
+    background-color: #FDF2E9; /* Replace "your-color" with the desired background color */
     margin: 0; /* Remove default body margin to prevent unwanted spacing */
-    font-family: Arial, sans-serif; /* Add a fallback font family if needed */
+    font-family:Arial, sans-serif; /* Add a fallback font family if needed */
 }
 
 
 p{
     font-family: 'Merienda', cursive;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #FDF2E9;
 }
 
 h1{
 margin-bottom: 1rem;
 margin-top: 0rem;
-font-size:36px;
+font-size:2.25rem;
 font-family: 'Merienda', cursive;
 font-weight:bolder ;
 letter-spacing: 2px;
@@ -31,7 +31,7 @@ text-transform: uppercase;
 }
 
 .wedding-date{
-    font-size:xx-large;
+    font-size:2.5rem;
     font-style:normal;
     font-weight:lighter ;
     margin-bottom: 1rem;
@@ -50,7 +50,7 @@ text-transform: uppercase;
     line-height: 1.5;
     font-family: 'Merienda', cursive;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 
@@ -63,7 +63,7 @@ body {
 /* Header styles */
 header {
     background-color: #FFF;
-    color: #FFF;
+    color:#FFF;
     text-align: right;
     padding: 20px;
     position: sticky;
@@ -93,6 +93,24 @@ header {
     text-transform: uppercase;
 }
 
+/* Hamburger Menu Icon Styles */
+.hamburger-menu {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #154360;
+    margin: 6px 0;
+}
+
+/* Mobile Menu (Hidden by Default) */
+.header-menu-right.mobile-menu {
+    display: none;
+}
+
 
 /* Hero section styles */
 .hero {
@@ -113,7 +131,7 @@ header {
 
 /* Section titles */
 .content h2 {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 20px;
     margin: 0;
     font-weight: 500;
@@ -160,7 +178,7 @@ img {
     text-align:center; /* Center-align the text */
     font-family: 'Merienda', cursive;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125rem;
     /*background-color: #FDF2E9;*/
     padding-right: 60px;
     padding-left: 60px;
@@ -182,7 +200,7 @@ img {
 .groom-and-bride, .groom-name, .bride-name, .details-location, .details-direction, .details-parking, .contact-groom, .contact-bride, .taxi-info {
     font-family: 'Merienda', cursive;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     /*background-color: #FDF2E9;*/
 }
 
@@ -191,7 +209,7 @@ img {
     text-align:center; /* Center-align the text */
     font-family: 'Merienda', cursive;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding-right: 60px;
     padding-left: 60px;
     line-height: 1.5; /* Adjust line spacing for better readability */
@@ -438,11 +456,11 @@ img {
 .schedule-event h3 {
     font-family: 'Merienda', cursive;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .schedule-event p {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     margin: 5px 0;
 }
