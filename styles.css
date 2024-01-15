@@ -318,6 +318,7 @@ img {
 
     .countdown-timer li span {
         font-size: 8vw; /* Adjust font size for smaller screens */
+        line-height: 1;
     }
 
     .countdown-timer li.separator {
