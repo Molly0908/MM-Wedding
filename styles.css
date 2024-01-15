@@ -341,6 +341,29 @@ img {
     }
 }
 
+/* CSS for Google Map Container */
+.google-map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
+    height: 0;
+    overflow: hidden;
+}
+
+.google-map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive adjustments for smaller screens (e.g., mobile) */
+@media screen and (max-width: 768px) {
+    .google-map-container {
+        padding-bottom: 75%; /* Adjust the aspect ratio for smaller screens */
+    }
+}
+
 /* Style the countdown timer */
 .countdown-timer ul {
     /* Your styles for the countdown timer here */
