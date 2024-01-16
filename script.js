@@ -113,65 +113,12 @@ dots.forEach((li, key) => {
     })
 })
 
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const mobileMenu = document.querySelector('.mobile-menu');
+// JavaScript for handling the mobile menu
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const mobileMenuContainer = document.querySelector(".mobile-menu-container");
 
-    // Function to toggle the mobile menu
-    function toggleMobileMenu() {
-        mobileMenu.classList.toggle('show-mobile-menu');
-    }
-
-    // Toggle mobile menu on hamburger icon click
-    hamburgerMenu.addEventListener('click', toggleMobileMenu);
-
-    // Smooth scrolling for navigation links (both desktop and mobile menus)
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            window.scrollTo({
-                top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
-                behavior: 'smooth'
-            });
-
-            // Hide mobile menu when a link is clicked (for mobile view)
-            if (mobileMenu.classList.contains('show-mobile-menu')) {
-                toggleMobileMenu();
-            }
-        });
-    });
-});
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const mobileMenuContainer = document.querySelector('.mobile-menu-container');
-
-    // Function to toggle the mobile menu container
-    function toggleMobileMenu() {
-        mobileMenuContainer.classList.toggle('show-mobile-menu');
-    }
-
-    // Toggle mobile menu container on hamburger icon click
-    hamburgerMenu.addEventListener('click', toggleMobileMenu);
-
-    // Smooth scrolling for navigation links (both desktop and mobile menus)
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            window.scrollTo({
-                top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
-                behavior: 'smooth'
-            });
-
-            // Hide mobile menu container when a link is clicked (for mobile view)
-            if (mobileMenuContainer.classList.contains('show-mobile-menu')) {
-                toggleMobileMenu();
-            }
-        });
+    hamburgerMenu.addEventListener("click", function () {
+        mobileMenuContainer.classList.toggle("show-mobile-menu");
     });
 });
