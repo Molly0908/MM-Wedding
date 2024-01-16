@@ -319,28 +319,18 @@ img {
     object-fit: cover;
 }
 
-/* Additional styles for mobile screens */
-@media screen and (max-width: 767px) {
-    .profile-container {
-        flex-direction: column; /* Change flex-direction to column for mobile */
+/* Media query for adjusting menu on smaller screens */
+@media screen and (max-width: 768px) {
+    .header-menu-right li {
+        display: inline-block; /* Display menu items horizontally on smaller screens */
+        margin-left: 5px; /* Adjust the spacing between menu items */
     }
 
-    .profile {
-        flex: 1; /* Each profile takes equal width */
-        margin: 0; /* Reset margin for profiles */
-        margin-bottom: 20px; /* Add spacing between profiles */
-        text-align: center;
-    }
-
-    .image-container {
-        flex: 0 0 100%; /* Full width for each profile container on mobile */
-        display: flex;
-        padding-left: 3vw;
-        padding-right: 3vw;
-        justify-content: center; /* Center-align the images horizontally */
-        align-items: center; /* Center-align the images vertically */
+    .header-menu-right a {
+        font-size:x-small; /* Adjust font size for smaller screens */
     }
 }
+
 /*Wedding Details*/
 
 

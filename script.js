@@ -113,12 +113,3 @@ dots.forEach((li, key) => {
     })
 })
 
-// JavaScript for handling the mobile menu
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburgerMenu = document.querySelector(".hamburger-menu");
-    const mobileMenuContainer = document.querySelector(".mobile-menu-container");
-
-    hamburgerMenu.addEventListener("click", function () {
-        mobileMenuContainer.classList.toggle("show-mobile-menu");
-    });
-});
