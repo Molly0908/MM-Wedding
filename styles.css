@@ -293,49 +293,52 @@ img {
 }
 
 
+/* Additional styles for profile containers */
+.profile-container {
+    display: flex;
+    justify-content: space-between; /* Space between bride and groom profiles */
+    margin-top: 20px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    overflow: hidden;
+}
+
 .profile {
-    display: flex; /* Display the profiles side by side */
-    justify-content: space-between; /* 使照片在水平方向上分散对齐 */
-    align-items: center; /* Center-align the profiles horizontally */
-    margin-bottom: 50px; /* Add some spacing between the profiles */
+    flex: 1; /* Each profile takes equal width */
+    margin: 0 20px; /* Add spacing between profiles */
+    text-align: center;
 }
 
 .profile-image {
     text-align: center;
-    /*margin-top: 10px;*/
 }
 
-.image-container {
-    
-    flex: 0 0 calc(33.33% - 10px); /* Set a specific width for the image container and leave space between them */
-    width: 100%; /* Set a specific width for the image container */
-    height: auto; /* Set a specific height for the image container */
-    overflow: hidden; /* Hide any image overflow */
-    background-color:#FDF2E9;
-    box-sizing: border-box; /* Include borders in the width calculation */
-    border: 5px solid #FDF2E9; /* Optional border for separation */
-}
-
-.image-container img {
-    width: 100%;
-    height: auto; /* Ensure the image maintains its aspect ratio */
-    /*display: block; /* Remove extra spacing below images */
-    /*margin: 0 auto; /* Center-align images horizontally */
-}
-
-.profile-image p {
-    margin-top: 10px; /* 调整文本与照片的间距 */
+.profile-image img {
+    max-width: 100%;
+    height: 55rem;
+    object-fit: cover;
 }
 
 /* Additional styles for mobile screens */
 @media screen and (max-width: 767px) {
+    .profile-container {
+        flex-direction: column; /* Change flex-direction to column for mobile */
+    }
+
     .profile {
-        flex-direction: column; /* Vertical layout for mobile */
+        flex: 1; /* Each profile takes equal width */
+        margin: 0; /* Reset margin for profiles */
+        margin-bottom: 20px; /* Add spacing between profiles */
+        text-align: center;
     }
 
     .image-container {
         flex: 0 0 100%; /* Full width for each profile container on mobile */
-        margin-bottom: 20px; /* Add spacing between profiles */
+        display: flex;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        justify-content: center; /* Center-align the images horizontally */
+        align-items: center; /* Center-align the images vertically */
     }
 }
 /*Wedding Details*/
