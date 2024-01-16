@@ -319,6 +319,33 @@ img {
     object-fit: cover;
 }
 
+/* Additional styles for mobile screens */
+@media screen and (max-width: 767px) {
+    .profile-container {
+        flex-direction: column; /* Change flex-direction to column for mobile */
+    }
+
+    .profile {
+        flex: 1; /* Each profile takes equal width */
+        margin: 0; /* Reset margin for profiles */
+        margin-bottom: 20px; /* Add spacing between profiles */
+        text-align: center;
+    }
+
+    .image-container {
+        flex: 0 0 100%; /* Full width for each profile container on mobile */
+        display: flex;
+        justify-content: center; /* Center-align the images horizontally */
+        align-items: center; /* Center-align the images vertically */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Ensure the images fill their containers */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
 /* Media query for adjusting menu on smaller screens */
 @media screen and (max-width: 768px) {
     .header-menu-right li {
